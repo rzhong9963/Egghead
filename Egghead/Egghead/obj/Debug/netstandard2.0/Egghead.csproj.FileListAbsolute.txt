@@ -1,0 +1,13 @@
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\bin\Debug\netstandard2.0\Egghead.deps.json
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\bin\Debug\netstandard2.0\Egghead.dll
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\bin\Debug\netstandard2.0\ref\Egghead.dll
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\bin\Debug\netstandard2.0\Egghead.pdb
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\Egghead.csprojAssemblyReference.cache
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\Egghead.AssemblyInfoInputs.cache
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\Egghead.AssemblyInfo.cs
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\Egghead.dll
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\ref\Egghead.dll
+C:\Users\rzhon\Documents\git\Egghead\Egghead\Egghead\obj\Debug\netstandard2.0\Egghead.pdb
