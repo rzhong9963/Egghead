@@ -1,14 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <Authors>Hunter Adams, Chris Calvo, Julia Grammes, Leslyanne Warrington, Robert Zhong</Authors>
-    <Company>Eggheads</Company>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <ApplicationIcon />
-    <OutputType>Library</OutputType>
-    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
