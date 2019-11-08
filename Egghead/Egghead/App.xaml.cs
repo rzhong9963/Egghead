@@ -6,11 +6,26 @@ namespace Egghead
 {
     public partial class App : Application
     {
+
+        public static bool IsLoggedIn
+        {
+            get;
+            set;
+        }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            if (!IsLoggedIn)
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new Egghead.MainPage());
+            }
         }
 
         protected override void OnStart()

@@ -28,4 +28,29 @@ namespace Egghead.iOS
             return base.FinishedLaunching(app, options);
         }
     }
-}
+    /*public class AppDelegate : UIApplicationDelegate
+    {
+        public override UIWindow Window
+        {
+            get;
+            set;
+        }
+
+        public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
+        {
+            Window = new UIWindow(UIScreen.MainScreen.Bounds);
+
+            var controller = new MainController();
+            //controller.View.BackgroundColor = UIColor.LightGray;
+            //controller.Title = "Egghead";
+
+            var navBar = new UINavigationController(controller);
+
+            Window.RootViewController = navBar;
+
+            Window.MakeKeyAndVisible();
+
+            return true;
+        }
+    }
+}*/
