@@ -5,7 +5,7 @@ using SQLite;
 
 namespace Egghead.Models
 {
-    class User
+    public class User
     {
         [PrimaryKey, AutoIncrement]
         public int ID
@@ -38,5 +38,28 @@ namespace Egghead.Models
             get;
             set;
         }
+        public string Role
+        {
+            get;
+            set;
+        }
+        public string Bio
+        {
+            get;
+            set;
+        }
+        public byte[] Pic
+        {
+            get;
+            set;
+        } = null;
+        public string Name
+        {
+            get
+            {
+                return this.FirstName + " " + this.LastName;
+            }
+        }
+        // City, State, Phone, Interests, Matches/Connections, Messages, etc
     }
 }
