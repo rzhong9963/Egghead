@@ -15,10 +15,10 @@ namespace Egghead
 
         public App()
         {
-            InitializeComponent();
+            MainPage = new Egghead.MainPage();
 
             //MainPage = new MainPage();
-            if (!IsLoggedIn)
+            /*if (!IsLoggedIn)
             {
                 MainPage = new NavigationPage(new LoginPage());
             }
@@ -26,6 +26,7 @@ namespace Egghead
             {
                 MainPage = new NavigationPage(new Egghead.MainPage());
             }
+            */
         }
 
         protected override void OnStart()
