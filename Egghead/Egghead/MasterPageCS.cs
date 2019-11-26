@@ -22,6 +22,18 @@ namespace Egghead
                 IconSource = "connections.png",
                 TargetType = typeof(ConnectionsPageCS)
             });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Messages Page",
+                IconSource = "messages.png",
+                TargetType = typeof(MessagesPageCS)
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Settings Page",
+                IconSource = "settings.png",
+                TargetType = typeof(SettingsPageCS)
+            });
             listView = new ListView
             {
                 ItemsSource = masterPageItems,

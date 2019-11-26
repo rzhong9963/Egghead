@@ -16,8 +16,12 @@ namespace Egghead
             masterPage = new MasterPageCS();
             Master = masterPage;
             Detail = new NavigationPage(new ConnectionsPageCS());
-
+            
+            Detail = new NavigationPage(new MessagesPageCS());
+            
+            Detail = new NavigationPage(new SettingsPageCS());
             masterPage.ListView.ItemSelected += OnItemSelected;
+
 
             if (Device.RuntimePlatform == Device.UWP)
             {
