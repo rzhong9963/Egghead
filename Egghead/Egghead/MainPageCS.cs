@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace Egghead
 {
-    public partial class MainPage : MasterDetailPage
+    public class MainPageCS : MasterDetailPage
     {
-        public MainPage()
-        {
-            InitializeComponent();
+        MasterPageCS masterPage;
 
-            masterPage.listView.ItemSelected += OnItemSelected;
+        public MainPageCS()
+        {
+            masterPage = new MasterPageCS();
+            Master = masterPage;
+            Detail = new NavigationPage(new ConnectionsPageCS());
+
+            masterPage.ListView.ItemSelected += OnItemSelected;
 
             if (Device.RuntimePlatform == Device.UWP)
             {
@@ -28,7 +31,7 @@ namespace Egghead
             if (item != null)
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
-                masterPage.listView.SelectedItem = null;
+                masterPage.ListView.SelectedItem = null;
                 IsPresented = false;
             }
         }
