@@ -15,6 +15,24 @@ namespace Egghead
         public MessagesPage()
         {
             InitializeComponent();
+            lst.ItemsSource = new List<Message>()
+            {
+                new Message()
+                {
+                    Name = "Julia", Text = "Hi! :)"
+                },
+                new Message()
+                {
+                    Name = "Rob", Text = "Geaux Tigers!"
+                }
+            };
+          
         }
+        void TextCell_Tapped(object sender,Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+      
     }
+   
 }
