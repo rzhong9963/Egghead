@@ -29,15 +29,25 @@ namespace Egghead.Data
             return db.Table<User>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
+        public Task<User> GetUserAsync(string email)
+        {
+            return db.Table<User>().Where(i => i.Email == email).FirstOrDefaultAsync();
+        }
+
+        public Task<User> GetUserAsync(string email, string password)
+        {
+            return db.Table<User>().Where(i => i.Email == email && i.Password == password).FirstOrDefaultAsync();
+        }
+
         public Task<int> SaveUserAsync(User u)
         {
            if(u.ID != 0){
                 return db.UpdateAsync(u);
            }
-            else
-            {
+           else
+           {
                 return db.InsertAsync(u);
-            }
+           }
         }
 
         public Task<int> DeleteUserAsync(User u)

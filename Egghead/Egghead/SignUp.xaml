@@ -6,10 +6,20 @@
              mc:Ignorable="d"
              x:Class="Egghead.SignUp">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Email" />
+            <Entry Placeholder="Email" 
+                   x:Name="email"/>
+            <Label Text="Password" />
+            <Entry Placeholder="Password"
+                   x:Name="pass"
+                   IsPassword="true"/>
+            <Label Text="Repeat Password" />
+            <Entry Placeholder="Repeat password"
+                   x:Name="passRep" 
+                   IsPassword="true"/>
+            <Button Text="Sign Up" Clicked="SignUpButton" />
+            <Label x:Name="ErrorMsg" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -26,10 +26,17 @@ namespace Egghead
                 Password = pass.Text
             };
 
+            if(pass.Text == TempPass.temp)
+            {
+                await Navigation.PushAsync(new ChangePassword());
+            }
             var validUser = CheckCredentials(user);
             if (validUser)
             {
-                
+                App.IsLoggedIn = true;
+                App.LoggedIn = await App.Database.GetUserAsync(user.Email, user.Password);
+                Navigation.InsertPageBefore(new MainPage(), this); // Change MainPage to whatever the actual Main Page (Connections) is named
+                await Navigation.PopAsync();
             }
             else
             {
@@ -39,19 +46,20 @@ namespace Egghead
             }
         }
 
-        async void ForgotPassword(object sender, EventArgs e)
+        async void ForgotPass(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ResetPassword());
         }
 
         async void SignUp(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new SignUp());
         }
         
         bool CheckCredentials(User u)
         {
-            return false; // False for now
+            var loggedin = App.Database.GetUserAsync(email.Text, pass.Text).Result;
+            return loggedin != null;
         }
     }
 }

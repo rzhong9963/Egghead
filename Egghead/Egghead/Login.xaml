@@ -5,6 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Egghead.Login">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Up" Clicked="SignUp"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
             <Label Text="Email"/>
