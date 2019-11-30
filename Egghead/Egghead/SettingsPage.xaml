@@ -7,12 +7,10 @@
              x:Class="Egghead.SettingsPage"
              Title="Settings">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
-            <Label Text="Enter your new password below" />
-            <Entry x:Name="pass" Placeholder="Password" IsPassword="True" />
-            <Entry x:Name="passRep" Placeholder="Repeat Password" IsPassword="True"/>
-            <Button Text="Change Password" Clicked="ChangePass"/>
-            <Label x:Name="ErrorMsg"/>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

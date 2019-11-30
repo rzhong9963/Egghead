@@ -8,11 +8,10 @@
              Title="Connections"> 
              
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
-            <Label Text="Enter your email below to reset your password" />
-            <Entry x:Name="Email" Placeholder="Email" />
-            <Button Text="Reset Password" Clicked="ResPas"/>
-            <Label x:Name="Msg"/>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
