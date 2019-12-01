@@ -15,6 +15,7 @@ namespace Egghead
     {
         public Login()
         {
+            Xamarin.Forms.NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
         }
 
