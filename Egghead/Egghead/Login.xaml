@@ -90,7 +90,7 @@
                                 HorizontalOptions="FillAndExpand"
                                 CornerRadius="25"
                                 BackgroundColor="LimeGreen"/>
-                </Frame>>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
