@@ -27,7 +27,8 @@
                            Keyboard="Email"
                            ReturnType="Next"
                            IsSpellCheckEnabled="false"
-                           FontSize="15"/>
+                           FontSize="15"
+                           />
                 </Frame>
 
                 <?password box?>
@@ -39,7 +40,8 @@
                            x:Name="pass"
                            IsPassword="true"
                            IsSpellCheckEnabled="false"
-                           FontSize="15"/>
+                           FontSize="15"
+                           ReturnType="Done"/>
                 </Frame>
 
                 <?login button?>
