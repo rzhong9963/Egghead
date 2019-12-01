@@ -4,19 +4,94 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Egghead.Login">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Sign Up" Clicked="SignUp"/>
-    </ContentPage.ToolbarItems>
-    
+             x:Class="Egghead.Login"
+             BackgroundColor="#6e5069">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
-            <Label Text="Email"/>
-            <Entry x:Name="email" Placeholder="Email"/>
-            <Label Text="Password"/>
-            <Entry x:Name="pass" IsPassword="True" Placeholder="Password"/>
-            <Button Text="Login" Clicked="LoginButton"/>
-            <Button Text="Forgot Password" Clicked="ForgotPass"/>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Egghead"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="50"
+                       TextColor="White"
+                       Margin="0,30,0,40"
+                       >
+                </Label>
+
+                <?email box?>
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       Padding="10,0"
+                       Margin="50, 0">
+                    <Entry x:Name="email" 
+                           Placeholder="E-mail"
+                           Keyboard="Email"
+                           ReturnType="Next"
+                           IsSpellCheckEnabled="false"
+                           FontSize="15"/>
+                </Frame>
+
+                <?password box?>
+                <Frame BackgroundColor="White"
+                           CornerRadius="10"
+                           Padding="10,0"
+                           Margin="50, 0">
+                    <Entry Placeholder="Password"
+                           x:Name="pass"
+                           IsPassword="true"
+                           IsSpellCheckEnabled="false"
+                           FontSize="15"/>
+                </Frame>
+
+                <?login button?>
+                <Frame Padding="0,0,0,0"
+                       CornerRadius="20"
+                       Margin="70,00,70,0"
+                       BackgroundColor="Transparent">
+                    <Button Text="Login"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Clicked="LoginButton"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            CornerRadius="25"
+                            BackgroundColor="LimeGreen"/>
+                </Frame>
+
+                <?forgot password button?>
+                <Frame Padding="0,0,0,0"
+                       CornerRadius="25"
+                       Margin="70,0,70,0"
+                       BackgroundColor="Transparent">
+                    <Button Text="Forgot Password?"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            Clicked="ForgotPass"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            CornerRadius="25"
+                            BackgroundColor="LimeGreen"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="End">
+                <Label Text="Not a member?"
+                       HorizontalOptions="Center"
+                       TextColor="LightGray">
+
+                </Label>
+                <Frame Padding="0"
+                       CornerRadius="25"
+                       Margin="70,0,70,30"
+                       BackgroundColor="Transparent">
+                    <Button Text="Sign Up" 
+                                Clicked="SignUp"
+                                TextColor="White"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand"
+                                CornerRadius="25"
+                                BackgroundColor="LimeGreen"/>
+                </Frame>>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
