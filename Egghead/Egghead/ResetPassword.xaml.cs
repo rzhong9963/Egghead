@@ -21,17 +21,18 @@ namespace Egghead
         async void ResPas(object sender, EventArgs e)
         {
             var u = App.Database.GetUserAsync(Email.Text);
-            if(u.Result.Email == Email.Text)
+            if(u.Result == null)
+            {               
+                Err.IsVisible = true;
+            }
+            else
             {
+                Err.IsVisible = false;
                 TempPass.temp = temp();
                 TempPass.user = u.Result.Email;
                 u.Result.Password = TempPass.temp;
                 await App.Database.SaveUserAsync(u.Result);
                 await Navigation.PushAsync(new PasswordPage());
-            }
-            else
-            {
-                Msg.Text = "No account with the email exists";
             }
         }
         // Securely generate a completely random password
