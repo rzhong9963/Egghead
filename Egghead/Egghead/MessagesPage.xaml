@@ -7,12 +7,33 @@
              x:Class="Egghead.MessagesPage"
              Title="Messages">
     <ContentPage.Content>
-        <ListView x:Name="lst" BackgroundColor="#f2e6ff">
+        <ListView x:Name="lst" BackgroundColor="#f2e6ff"
+                  HasUnevenRows="true"
+                  SeparatorVisibility="None"
+                  ItemTapped="OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Name}" TextColor="Purple" 
-                              Detail="{Binding Text}" ></TextCell>
-                    
+                    <ViewCell>
+                        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1"
+                                   Text="{Binding Name}"
+                                   VerticalOptions="End"/>
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   VerticalOptions="Start"
+                                   Text="{Binding Text}"/>
+                        </Grid>
+                    </ViewCell>
+                 
+
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

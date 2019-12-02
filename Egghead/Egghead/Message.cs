@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace Egghead
 {
@@ -8,5 +9,6 @@ namespace Egghead
     {
         public string Name { get; set; }
         public string Text { get; set; }
+       
     }
 }

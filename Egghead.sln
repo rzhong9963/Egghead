@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egghead.Android", "Egghead\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egghead.iOS", "Egghead\Egghead.iOS\Egghead.iOS.csproj", "{7A7D989F-26F9-49FA-ABBB-30363DE123DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egghead", "Egghead\Egghead\Egghead.csproj", "{3B5F92EC-F571-4756-923F-084F2D5C6A53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Egghead", "Egghead\Egghead\Egghead.csproj", "{3B5F92EC-F571-4756-923F-084F2D5C6A53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,7 +38,6 @@ Global
 		{11269989-2ED0-4BA6-8A4C-BB499EF588BF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{11269989-2ED0-4BA6-8A4C-BB499EF588BF}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{7A7D989F-26F9-49FA-ABBB-30363DE123DD}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{7A7D989F-26F9-49FA-ABBB-30363DE123DD}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{7A7D989F-26F9-49FA-ABBB-30363DE123DD}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
 		{7A7D989F-26F9-49FA-ABBB-30363DE123DD}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{7A7D989F-26F9-49FA-ABBB-30363DE123DD}.Debug|iPhone.Build.0 = Debug|iPhone

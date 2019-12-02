@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 using Xamarin.Forms;
 
@@ -26,7 +23,7 @@ namespace Egghead
             {
                 Title = "Messages Page",
                 IconSource = "messages.png",
-                TargetType = typeof(MessagesPageCS)
+                TargetType = typeof(MessagesPage)
             });
             masterPageItems.Add(new MasterPageItem
             {

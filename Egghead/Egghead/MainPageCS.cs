@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Xamarin.Forms;
 
@@ -16,9 +13,9 @@ namespace Egghead
             masterPage = new MasterPageCS();
             Master = masterPage;
             Detail = new NavigationPage(new ConnectionsPageCS());
-            
+
             Detail = new NavigationPage(new MessagesPageCS());
-            
+
             Detail = new NavigationPage(new SettingsPageCS());
             masterPage.ListView.ItemSelected += OnItemSelected;
 

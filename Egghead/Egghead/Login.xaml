@@ -5,16 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Egghead.Login"
-             BackgroundColor="#6e5069">
+             BackgroundColor="#B074DC">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Label Text="Egghead"
                        HorizontalOptions="CenterAndExpand"
-                       FontSize="50"
+                       FontSize="70"
                        TextColor="White"
                        Margin="0,30,0,40"
-                       >
+                       FontFamily="HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2">
+
                 </Label>
 
                 <?email box?>
@@ -51,12 +52,12 @@
                        BackgroundColor="Transparent">
                     <Button Text="Login"
                             FontAttributes="Bold"
-                            TextColor="White"
+                            TextColor="Black"
                             Clicked="LoginButton"
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="FillAndExpand"
                             CornerRadius="25"
-                            BackgroundColor="LimeGreen"/>
+                            BackgroundColor="Gold"/>
                 </Frame>
 
                 <?forgot password button?>
@@ -65,13 +66,13 @@
                        Margin="70,0,70,0"
                        BackgroundColor="Transparent">
                     <Button Text="Forgot Password?"
-                            TextColor="White"
+                            TextColor="Black"
                             FontAttributes="Bold"
                             Clicked="ForgotPass"
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="FillAndExpand"
                             CornerRadius="25"
-                            BackgroundColor="LimeGreen"/>
+                            BackgroundColor="Gold"/>
                 </Frame>
             </StackLayout>
             <StackLayout Orientation="Vertical" 
@@ -87,11 +88,11 @@
                        BackgroundColor="Transparent">
                     <Button Text="Sign Up" 
                                 Clicked="SignUp"
-                                TextColor="White"
+                                TextColor="Black"
                                 VerticalOptions="FillAndExpand"
                                 HorizontalOptions="FillAndExpand"
                                 CornerRadius="25"
-                                BackgroundColor="LimeGreen"/>
+                                BackgroundColor="Gold"/>
                 </Frame>
             </StackLayout>
         </StackLayout>

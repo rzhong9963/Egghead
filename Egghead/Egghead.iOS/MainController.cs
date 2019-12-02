@@ -1,10 +1,7 @@
-﻿using System;
-using System.Drawing;
-
-using CoreFoundation;
-using CoreGraphics;
-using UIKit;
+﻿using CoreGraphics;
 using Foundation;
+using System.Drawing;
+using UIKit;
 
 // Custom controller for iOS
 // May not be used

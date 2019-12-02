@@ -1,15 +1,14 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.IO;
-using Egghead.Data;
+﻿using Egghead.Data;
 using Egghead.Models;
+using System;
+using System.IO;
+using Xamarin.Forms;
 
 namespace Egghead
 {
     public partial class App : Application
     {
-
+        public static string Name = "Julia";
         public static bool IsLoggedIn
         {
             get;
@@ -52,7 +51,7 @@ namespace Egghead
             {
                 MainPage = new NavigationPage(new MainPage()); // This needs to be changed to whatever the Main Page is named
             }
-           
+
         }
 
         protected override void OnStart()

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Egghead.Models;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Egghead.Models;
 
 namespace Egghead
 {
@@ -27,7 +22,7 @@ namespace Egghead
                 Password = pass.Text
             };
 
-            if(pass.Text == TempPass.temp)
+            if (pass.Text == TempPass.temp)
             {
                 await Navigation.PushAsync(new ChangePassword());
             }
@@ -56,7 +51,7 @@ namespace Egghead
         {
             await Navigation.PushAsync(new SignUp());
         }
-        
+
         bool CheckCredentials(User u)
         {
             var loggedin = App.Database.GetUserAsync(email.Text, pass.Text).Result;

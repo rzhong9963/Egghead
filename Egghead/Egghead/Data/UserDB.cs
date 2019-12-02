@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Egghead.Models;
 using SQLite;
-using Egghead.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 // General format taken from Microsoft Documentaion on Local SQLite Databases
 
@@ -41,13 +39,14 @@ namespace Egghead.Data
 
         public Task<int> SaveUserAsync(User u)
         {
-           if(u.ID != 0){
+            if (u.ID != 0)
+            {
                 return db.UpdateAsync(u);
-           }
-           else
-           {
+            }
+            else
+            {
                 return db.InsertAsync(u);
-           }
+            }
         }
 
         public Task<int> DeleteUserAsync(User u)

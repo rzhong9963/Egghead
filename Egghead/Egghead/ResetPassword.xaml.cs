@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Security.Cryptography;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Security.Cryptography;
 
 namespace Egghead
 {
@@ -21,7 +17,7 @@ namespace Egghead
         async void ResPas(object sender, EventArgs e)
         {
             var u = App.Database.GetUserAsync(Email.Text);
-            if(u.Result.Email == Email.Text)
+            if (u.Result.Email == Email.Text)
             {
                 TempPass.temp = temp();
                 TempPass.user = u.Result.Email;
@@ -31,12 +27,12 @@ namespace Egghead
             }
             else
             {
-                Msg.Text = "No account with the email exists";
+              // Msg.Text = "No account with the email exists";
             }
         }
         // Securely generate a completely random password
         const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        static string temp(int length=15)
+        static string temp(int length = 15)
         {
             string s = "";
             using (RNGCryptoServiceProvider provider = new RNGCryptoServiceProvider())

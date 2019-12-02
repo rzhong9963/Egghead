@@ -4,21 +4,50 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Egghead.SignUp">
+             x:Class="Egghead.SignUp" BackgroundColor="#B074DC">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
-            <Label Text="Email" />
-            <Entry Placeholder="Email" 
+            <Label Text="Sign Up!"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="70"
+                       TextColor="White"
+                       Margin="0,30,0,40"
+                       FontFamily="HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2">
+
+            </Label>
+
+            <Label Text="Email" Margin="50,0"/>
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                       Padding="10,0"
+                       Margin="50, 0">
+                <Entry Placeholder="Email" 
                    x:Name="email"/>
-            <Label Text="Password" />
-            <Entry Placeholder="Password"
+            </Frame>
+            <Label Text="Password" Margin="50,0"/>
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                       Padding="10,0"
+                       Margin="50, 0">
+                <Entry Placeholder="Password"
                    x:Name="pass"
                    IsPassword="true"/>
-            <Label Text="Repeat Password" />
-            <Entry Placeholder="Repeat password"
+            </Frame>
+            <Label Text="Repeat Password" Margin="50,0"/>
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="10,0"
+                   Margin="50,0">
+                <Entry Placeholder="Repeat password"
                    x:Name="passRep" 
                    IsPassword="true"/>
-            <Button Text="Sign Up" Clicked="SignUpButton" />
+            </Frame>
+
+            <Button Text="Sign Up" 
+                    Clicked="SignUpButton" 
+                    BackgroundColor="Gold"
+                    CornerRadius="25"
+                    Margin="70,0,70,30"/>
             <Label x:Name="ErrorMsg" />
         </StackLayout>
     </ContentPage.Content>

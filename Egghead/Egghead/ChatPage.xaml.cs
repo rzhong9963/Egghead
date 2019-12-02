@@ -5,11 +5,14 @@ using Xamarin.Forms.Xaml;
 namespace Egghead
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterPage : ContentPage
+    public partial class ChatPage : ContentPage
     {
-        public MasterPage()
+        public ChatPage()
         {
+
             InitializeComponent();
+            
         }
+        
     }
 }
