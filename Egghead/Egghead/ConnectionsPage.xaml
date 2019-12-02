@@ -5,13 +5,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Egghead.ConnectionsPage"
-             Title="Connections"> 
-             
+             Title="Connections">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <Frame BackgroundColor="Aqua"
+                   AbsoluteLayout.LayoutBounds=".5,.3,.66,.66"
+                   AbsoluteLayout.LayoutFlags="All">
+                <AbsoluteLayout>
+                    <BoxView x:Name="pic_box"
+                             BackgroundColor="Black"
+                             AbsoluteLayout.LayoutBounds="0,0,.3,0"
+                             AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"   
+                             CornerRadius="50">
+                    </BoxView>
+                </AbsoluteLayout>
+            </Frame>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
