@@ -9,7 +9,6 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
-
                 <Label Text="Egghead"
                        HorizontalOptions="CenterAndExpand"
                        FontSize="70"
@@ -18,6 +17,7 @@
                        FontFamily="HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2">
 
                 </Label>
+
                 <?email box?>
                 <Frame BackgroundColor="White"
                        CornerRadius="10"

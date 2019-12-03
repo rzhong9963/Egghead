@@ -1,6 +1,4 @@
-﻿using FFImageLoading.Forms.Platform;
-using ImageCircle.Forms.Plugin.iOS;
-using UIKit;
+﻿using UIKit;
 
 namespace Egghead.iOS
 {
@@ -12,10 +10,6 @@ namespace Egghead.iOS
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
             UIApplication.Main(args, null, "AppDelegate");
-            Xamarin.Forms.Forms.Init(); 
-            ImageCircleRenderer.Init();
-            CachedImageRenderer.Init();
-
         }
     }
 }

@@ -3,9 +3,6 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
-using FFImageLoading.Forms.Platform;
-using FFImageLoading.Transformations;
-using ImageCircle.Forms.Plugin.Droid;
 
 namespace Egghead.Droid
 {
@@ -21,8 +18,6 @@ namespace Egghead.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            ImageCircleRenderer.Init();
-            CachedImageRenderer.InitImageViewHandler();
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

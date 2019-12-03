@@ -3,20 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             xmlns:ffTr="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-             
              mc:Ignorable="d"
              x:Class="Egghead.ConnectionsPage"
              Title="Connections"> 
              
     <ContentPage.Content>
         <StackLayout>
-            <ff:CachedImage Source="ditto.jpg">
-                <ff:CachedImage.Transformations>
-                    <ffTr:RoundedTransformation Radius="240"></ffTr:RoundedTransformation>
-                </ff:CachedImage.Transformations>
-            </ff:CachedImage>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
