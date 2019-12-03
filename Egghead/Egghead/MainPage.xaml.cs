@@ -8,7 +8,7 @@ namespace Egghead
         public MainPage()
         {
             InitializeComponent();
-
+            NavigationPage.SetHasNavigationBar(this, false);
             masterPage.listView.ItemSelected += OnItemSelected;
 
             if (Device.RuntimePlatform == Device.UWP)

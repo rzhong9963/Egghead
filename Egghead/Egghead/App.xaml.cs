@@ -43,8 +43,7 @@ namespace Egghead
             if (!IsLoggedIn)
             {
                 var login = new NavigationPage(new Login());
-                login.BarBackgroundColor = Color.FromHex("3E196E");
-                login.BarTextColor = Color.FromHex("F4F4F4");
+               
                 MainPage = login;
             }
             else

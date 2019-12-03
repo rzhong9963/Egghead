@@ -6,6 +6,5 @@
              mc:Ignorable="d"
              x:Class="Egghead.App">
     <Application.Resources>
-
     </Application.Resources>
 </Application>
