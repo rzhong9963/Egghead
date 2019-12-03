@@ -41,7 +41,7 @@
                             <BoxView BackgroundColor="Black"
                                      HeightRequest="1"
                                      WidthRequest="100"/>
-                            <Label Text="Art Professor @ LSU"/>
+                            <Label Text="Business instructor @ LSU"/>
 
                         </StackLayout>
                     </StackLayout>
