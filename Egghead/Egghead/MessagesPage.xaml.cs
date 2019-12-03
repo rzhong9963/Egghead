@@ -16,7 +16,11 @@ namespace Egghead
             {
                 new Message()
                 {
-                    Name = "Dr. Mitchell Hogan ", Text = "How are you holding up?", 
+                    Name = "Michael Stevens", Text = "No Problem",
+                },
+                new Message()
+                {
+                    Name = "Dr. Robert E. Speedwagon", Text = "Don't forget to sign up for the event tomorrow."
                 },
                 new Message()
                 {
@@ -24,18 +28,12 @@ namespace Egghead
                 },
                 new Message()
                 {
-                    Name = "Andrew.", Text = "I've got a bunch of other things to do this week tho"
+                    Name = "Dr. Jonathan Miles", Text = "The meeting will be held, on Monday the 5th."
                 },
                 new Message()
                 {
-                    Name = "", Text = ""
-                },
-                new Message()
-                {
-                    Name = "Dr. Robert E. Speedwagon", Text = ""
+                    Name = "Dr. Mitchell Hogan", Text = "How are you holding up?"
                 }
-            };
-
         }
 
        private async void OnItemSelected(Object sender,ItemTappedEventArgs e)

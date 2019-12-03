@@ -34,7 +34,6 @@ namespace Egghead
             Messages.Insert(0, new Message() { Text = "I want to buy a laptop" });
             Messages.Insert(0, new Message() { Text = "Where I can find a good one?" });
             Messages.Insert(0, new Message() { Text = "Also I'm testing this chat" });
-            Messages.Insert(0, new Message() { Text = "Oh My God!" });
             Messages.Insert(0, new Message() { Text = " No Problem", Name = App.Name });
             Messages.Insert(0, new Message() { Text = "When we are going to meet?" });
             Messages.Insert(0, new Message() { Text = "I want to buy a laptop" });
