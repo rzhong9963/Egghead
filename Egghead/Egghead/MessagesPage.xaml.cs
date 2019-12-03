@@ -34,6 +34,8 @@ namespace Egghead
                 {
                     Name = "Dr. Mitchell Hogan", Text = "How are you holding up?"
                 }
+
+            };
         }
 
        private async void OnItemSelected(Object sender,ItemTappedEventArgs e)
