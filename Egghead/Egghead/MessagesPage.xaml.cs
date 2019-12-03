@@ -20,21 +20,21 @@ namespace Egghead
                 },
                 new Message()
                 {
-                    Name = "Dr. Robert E. Speedwagon", Text = "Don't forget to sign up for the event tomorrow."
-                },
-                new Message()
-                {
-                    Name = "Dr. Jonathan Miles", Text = "The meeting will be held, on Monday the 5th."
-                },
-                new Message()
-                {
-                    Name = "Dr. Jonathan Miles", Text = "The meeting will be held, on Monday the 5th."
-                },
-                new Message()
-                {
                     Name = "Dr. Mitchell Hogan", Text = "How are you holding up?"
+                },
+                new Message()
+                {
+                    Name = "Dr. Jonathan Miles", Text = "The meeting will be held, on Monday the 5th."
+                },
+                new Message()
+                {
+                    Name = "Andrew", Text = "i havent checked the hw yet"
+                },
+                new Message()
+                {
+                    Name = "Dr. Robert E. Speedwagon", Text = "Don't forget to sign up for the event tomorrow."
                 }
-
+                
             };
         }
 

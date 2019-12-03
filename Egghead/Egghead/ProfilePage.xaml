@@ -20,7 +20,7 @@
                             HeightRequest="100"
                             WidthRequest="100"
                             IsClippedToBounds="True">
-                        <Image Source="ditto.jpg"
+                        <Image Source="user.jpg"
                                 Aspect="AspectFill"
                                 Margin="-20"/>
                     </Frame>
@@ -31,14 +31,14 @@
                            HorizontalOptions="FillAndExpand">
                         <StackLayout>
                             <Label HorizontalTextAlignment="Center"
-                                   Text="Duncan Wlliams"
+                                   Text="Murphy Cottrell"
                                    TextColor="Black"/>
                             <Label HorizontalTextAlignment="Center" 
                                    Text="Louisiana State University" 
                                    TextColor="Black"
                                    Margin="0,-2"/>
                             <Label HorizontalTextAlignment="Center" 
-                                   Text="PhD in Computer Science" 
+                                   Text="Bachelor's in Computer Science" 
                                    TextColor="Black"
                                    Margin="0,-2"/>
                         </StackLayout>
@@ -51,7 +51,7 @@
                 <StackLayout>
                     <Label Margin="20,10" 
                            TextColor="Black"
-                           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                           Text="Devoted reader. Entrepreneur. Typical pop culture fanatic. Bacon junkie. Tvaholic. Web guru." />
                 </StackLayout>
                 <Button Text="Edit" Clicked="Edit_Button_Clicked" BackgroundColor="White" CornerRadius="20" TextColor="Purple" HorizontalOptions="Center"/>
             </StackLayout>

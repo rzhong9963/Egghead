@@ -8,7 +8,7 @@ namespace Egghead
 {
     public partial class App : Application
     {
-        public static string Name = "Julia";
+        public static string Name = "Murphy";
         public static bool IsLoggedIn
         {
             get;

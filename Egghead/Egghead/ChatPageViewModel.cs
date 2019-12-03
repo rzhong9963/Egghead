@@ -34,13 +34,13 @@ namespace Egghead
             Messages.Insert(0, new Message() { Text = "I want to buy a laptop" });
             Messages.Insert(0, new Message() { Text = "Where I can find a good one?" });
             Messages.Insert(0, new Message() { Text = "Also I'm testing this chat" });
-            Messages.Insert(0, new Message() { Text = " No Problem", Name = App.Name });
             Messages.Insert(0, new Message() { Text = "When we are going to meet?" });
-            Messages.Insert(0, new Message() { Text = "I want to buy a laptop" });
-            Messages.Insert(0, new Message() { Text = "Where I can find a good one?" });
-            Messages.Insert(0, new Message() { Text = "Also I'm testing this chat" });
-            Messages.Insert(0, new Message() { Text = "Oh My God!" });
-            Messages.Insert(0, new Message() { Text = " No Problem" });
+            Messages.Insert(0, new Message() { Text = "The insert bug is still in the file", Name = App.Name });
+            Messages.Insert(0, new Message() { Text = "I just made some changed to the db" });
+            Messages.Insert(0, new Message() { Text = "Try to remote into the system and then start the vm now" });
+            Messages.Insert(0, new Message() { Text = "From there everything should look ok" });
+            Messages.Insert(0, new Message() { Text = "Thank you very much! I wasn't sure how to go about it earlier", Name = App.Name });
+            Messages.Insert(0, new Message() { Text = "No Problem" });
 
             MessageAppearingCommand = new Command<Message>(OnMessageAppearing);
             MessageDisappearingCommand = new Command<Message>(OnMessageDisappearing);
