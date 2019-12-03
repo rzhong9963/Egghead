@@ -59,14 +59,14 @@
                        CornerRadius="50"
                        Margin="0,0,50,0"
                        IsClippedToBounds="True">
-                    <Image Source="tup.jpg"/>
+                    <Image Source="tup.png"/>
                 </Frame>
                 <Frame WidthRequest="100"
                        HeightRequest="100"
                        CornerRadius="50"
                        Margin="50,0,0,0"
                        IsClippedToBounds="True">
-                    <Image Source="tdwn.jpg"/>
+                    <Image Source="tdwn.png"/>
                 </Frame>
             </StackLayout>
         </AbsoluteLayout>
