@@ -21,7 +21,7 @@ namespace Egghead
             masterPage.ListView.ItemSelected += OnItemSelected;
 
 
-            if (Device.RuntimePlatform == Device.UWP)
+            if (Device.RuntimePlatform == Device.UWP || Device.RuntimePlatform == Device.iOS)
             {
                 MasterBehavior = MasterBehavior.Popover;
             }
