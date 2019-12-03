@@ -32,6 +32,7 @@
                     <local:MasterPageItem Title="Messages" IconSource="messages.png" TargetType="{x:Type local:MessagesPage}" />
                     <local:MasterPageItem Title="Settings" IconSource="settings.png" TargetType="{x:Type local:SettingsPage}" />
                     <local:MasterPageItem Title="Search for Mentors" TargetType="{x:Type local:SearchPage}"/>
+                    <local:MasterPageItem Title="My Matches" TargetType="{x:Type local:Matches}"/>
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
