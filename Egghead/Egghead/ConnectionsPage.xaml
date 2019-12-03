@@ -26,7 +26,7 @@
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
                                IsClippedToBounds="True">
-                            <Image Source="boopup.jpg"
+                            <Image Source="thisthing.jpg"
                                    Aspect="AspectFill"
                                    Margin="-20"
                                    HeightRequest="100"
@@ -34,13 +34,13 @@
                         </Frame>
                         <StackLayout HorizontalOptions="Start">
                             <Label x:Name="name_label"
-                                   Text="Name"
+                                   Text="Damon Goodman"
                                    />
                             <Label x:Name="org_label"
-                                   Text="Organization"
+                                   Text="Louisiana State University"
                                    VerticalOptions="CenterAndExpand"/>
                             <Label x:Name="qualify_label"
-                                   Text="Qualifications"
+                                   Text="Associate Vice Chancellor and Director of the Center for Research Innovation in Business"
                                    />
                         </StackLayout>
                     </StackLayout>

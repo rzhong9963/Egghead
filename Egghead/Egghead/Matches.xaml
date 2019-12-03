@@ -27,7 +27,7 @@
                                VerticalOptions="Center"
                                IsClippedToBounds="False"
                                Padding="0">
-                            <Image Source="boopup.jpg"
+                            <Image Source="another.jpg"
                                    Aspect="AspectFill"
                                    Margin="-20"
                                    HeightRequest="100"
@@ -36,7 +36,7 @@
                         <StackLayout Padding="15,0,0,0"
                                      VerticalOptions="Start"
                                      HorizontalOptions="StartAndExpand">
-                            <Label Text="Boo"
+                            <Label Text="Scott Kinch"
                                    Margin="0,-12,0,0"/>
                             <BoxView BackgroundColor="Black"
                                      HeightRequest="1"
