@@ -27,6 +27,7 @@
         <ListView x:Name="listView" x:FieldModifier="public" BackgroundColor="#B074DC" Footer="">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="My Profile" TargetType="{x:Type local:ProfilePage}"/>
                     <local:MasterPageItem Title="Connections" IconSource="connections.png" TargetType="{x:Type local:ConnectionsPage}"/>
                     <local:MasterPageItem Title="Messages" IconSource="messages.png" TargetType="{x:Type local:MessagesPage}" />
                     <local:MasterPageItem Title="Search for Mentors" TargetType="{x:Type local:SearchPage}"/>

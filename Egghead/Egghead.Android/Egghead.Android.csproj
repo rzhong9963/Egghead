@@ -101,7 +101,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ditto.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Egghead\Egghead.csproj">
       <Project>{3B5F92EC-F571-4756-923F-084F2D5C6A53}</Project>
