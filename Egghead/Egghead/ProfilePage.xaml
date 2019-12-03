@@ -8,43 +8,53 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+
                 <!-- Profile Name -->
                 <StackLayout BackgroundColor="MediumPurple"
                              HorizontalOptions="FillAndExpand" >
+                    <Frame Margin="10"          
+                            CornerRadius="150"
+                            HeightRequest="100"
+                            WidthRequest="100"
+                            IsClippedToBounds="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                        <Image Source="ditto.jpg"
+                                Aspect="AspectFill"
+                                Margin="-20"
+                                HeightRequest="200"
+                                WidthRequest="200" />
+                    </Frame>
                     <Frame BackgroundColor="Transparent"
                            CornerRadius="0"
-                           Padding="0,10,0,0"
-                           HeightRequest="100"
+                           Padding="0,10,0,70"
+                           HeightRequest="10"
                            HorizontalOptions="FillAndExpand">
                         <StackLayout>
-                            <!--image is gonna go somewhere in here-->
                             <Label HorizontalTextAlignment="Center"
-                                   Text="Duncan Williams"
+                                   Text="Duncan Wlliams"
                                    TextColor="Black"/>
                             <Label HorizontalTextAlignment="Center" 
                                    Text="Louisiana State University" 
                                    TextColor="Black"
                                    Margin="0,-2"/>
+                            <Label HorizontalTextAlignment="Center" 
+                                   Text="PhD in Computer Science" 
+                                   TextColor="Black"
+                                   Margin="0,-2"/>
                         </StackLayout>
-                       
-                    </Frame>
-                    
-                </StackLayout>
 
-                <!--code for line between Name and Bio
-                <Frame BackgroundColor="MediumPurple"
-                       CornerRadius="0"
-                       Padding="0,0"
-                       HeightRequest="3"
-                       HorizontalOptions="FillAndExpand">
-                </Frame>-->
+                    </Frame>
+
+                </StackLayout>
 
                 <!-- profile description -->
                 <StackLayout>
-                    <Label Margin="20,30" 
+                    <Label Margin="20,10" 
                            TextColor="Black"
                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
                 </StackLayout>
+                <Button Text="Edit" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

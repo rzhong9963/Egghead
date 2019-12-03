@@ -14,6 +14,8 @@ namespace Egghead
     {
         public ProfilePage()
         {
+            new Image { Source = "ditto.jpg" };
+
             InitializeComponent();
         }
     }
