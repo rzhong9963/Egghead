@@ -18,6 +18,8 @@ namespace Egghead
             Detail = new NavigationPage(new MessagesPageCS());
 
             Detail = new NavigationPage(new SettingsPageCS());
+
+            Detail = new NavigationPage(new SignOut());
             masterPage.ListView.ItemSelected += OnItemSelected;
 
 

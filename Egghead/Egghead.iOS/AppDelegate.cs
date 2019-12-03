@@ -24,6 +24,7 @@ namespace Egghead.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+            UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(176,116,220);
 
             return base.FinishedLaunching(app, options);
         }

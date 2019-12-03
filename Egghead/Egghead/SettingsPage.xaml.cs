@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +10,13 @@ namespace Egghead
         public SettingsPage()
         {
             InitializeComponent();
+        }
+
+        async void SignOut(object sender, EventArgs e)
+        {
+            App.IsLoggedIn = false;
+            App.LoggedIn = null;
+            await Navigation.PushAsync(new Login());
         }
     }
 }
