@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Egghead.Matches"
+             Title="My Matches">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+            <AbsoluteLayout Margin="0,0,0,0"
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand">
+                <Frame BackgroundColor="#f5f5f5"
+                       BorderColor="LightGray"
+                       AbsoluteLayout.LayoutBounds=".5,.1,.75,.1"
+                       AbsoluteLayout.LayoutFlags="All">
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Start">
+                        <Frame Margin="10"
+                               BorderColor="Black"
+                               CornerRadius="50"
+                               HeightRequest="50"
+                               WidthRequest="50"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               IsClippedToBounds="False"
+                               Padding="0">
+                            <Image Source="boopup.jpg"
+                                   Aspect="AspectFill"
+                                   Margin="-20"
+                                   HeightRequest="100"
+                                   WidthRequest="100" />
+                        </Frame>
+                        <StackLayout Padding="15,0,0,0"
+                                     VerticalOptions="Start"
+                                     HorizontalOptions="StartAndExpand">
+                            <Label Text="Boo"
+                                   Margin="0,-12,0,0"/>
+                            <BoxView BackgroundColor="Black"
+                                     HeightRequest="1"
+                                     WidthRequest="100"/>
+                            <Label Text="Art Professor @ LSU"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
