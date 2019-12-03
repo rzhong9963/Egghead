@@ -9,17 +9,36 @@
 
     <ContentPage.Content>
         <AbsoluteLayout>
-            <Frame BackgroundColor="Aqua"
+            <Frame x:Name="profile_frame"
+                   BackgroundColor="Aqua"
                    AbsoluteLayout.LayoutBounds=".5,.3,.66,.66"
                    AbsoluteLayout.LayoutFlags="All">
-                <AbsoluteLayout>
-                    <BoxView x:Name="pic_box"
-                             BackgroundColor="Black"
-                             AbsoluteLayout.LayoutBounds="0,0,.3,0"
-                             AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"   
-                             CornerRadius="50">
-                    </BoxView>
-                </AbsoluteLayout>
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Start">
+                    <StackLayout HorizontalOptions="Fill"
+                                 Orientation="Horizontal">
+                        <Frame x:Name="pic_box"
+                               BackgroundColor="Black"
+                               HeightRequest="70"
+                               WidthRequest="70"
+                               CornerRadius="70"
+                               HorizontalOptions="Start"/>
+                        <StackLayout HorizontalOptions="Start">
+                            <Label x:Name="name_label"
+                                   Text="Name"
+                                   />
+                            <Label x:Name="org_label"
+                                   Text="Organization"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Label x:Name="qualify_label"
+                                   Text="Qualifications"
+                                   />
+                        </StackLayout>
+                    </StackLayout>
+                    <Label x:Name="bio_label"
+                           Text="lorem ipsum dolor sit amet"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
             </Frame>
         </AbsoluteLayout>
     </ContentPage.Content>

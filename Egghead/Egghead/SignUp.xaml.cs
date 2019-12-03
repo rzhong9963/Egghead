@@ -21,7 +21,11 @@ namespace Egghead
             u.Email = email.Text;
             u.Password = pass.Text;
             var users = await App.Database.GetUsersAsync();
-            if (ValidCredentials(u, users))
+            if (email.Text == null|| pass.Text == null || passRep.Text == null)
+            {
+                await DisplayAlert("Error", "Fields cannot be empty", "OK");
+            }
+            else if (ValidCredentials(u, users))
             {
                 var firstPage = Navigation.NavigationStack.FirstOrDefault();
                 if (firstPage != null)
@@ -30,14 +34,14 @@ namespace Egghead
                     App.IsLoggedIn = true;
                     App.LoggedIn = u;
                     //Navigation.InsertPageBefore(new ProfilePage(), Navigation.NavigationStack.First()); // Profile creation page or whatever
-                    Navigation.InsertPageBefore(new ConnectionsPage(), Navigation.NavigationStack.First()); // Profile creation page or whatever
+                    Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First()); // Profile creation page or whatever
 
                     await Navigation.PopToRootAsync();
                 }
             }
         }
 
-
+       
         bool ValidCredentials(User u, List<User> users)
         {
             bool valid = false;

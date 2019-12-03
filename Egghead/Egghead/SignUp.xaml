@@ -11,8 +11,14 @@
                        HorizontalOptions="CenterAndExpand"
                        FontSize="70"
                        TextColor="White"
-                       Margin="0,30,0,40"
-                       FontFamily="HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2">
+                       Margin="0,30,0,40">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">homework normal</On>
+                            <On Platform="Android">HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2</On>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                       
 
             </Label>
 

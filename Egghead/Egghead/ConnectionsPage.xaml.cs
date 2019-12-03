@@ -10,8 +10,6 @@ namespace Egghead
         public ConnectionsPage()
         {
             InitializeComponent();
-
-            AbsoluteLayout.SetLayoutBounds(pic_box, new Rectangle(0, 0, .3, pic_box.Width));
         }
     }
 }
