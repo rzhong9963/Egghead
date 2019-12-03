@@ -30,7 +30,7 @@ namespace Egghead
                     App.IsLoggedIn = true;
                     App.LoggedIn = u;
                     //Navigation.InsertPageBefore(new ProfilePage(), Navigation.NavigationStack.First()); // Profile creation page or whatever
-                    Navigation.InsertPageBefore(new ConnectionsPage(), Navigation.NavigationStack.First()); // Profile creation page or whatever
+                    Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First()); // Profile creation page or whatever
 
                     await Navigation.PopToRootAsync();
                 }
