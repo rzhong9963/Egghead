@@ -198,6 +198,8 @@
     <BundleResource Include="Resources\Default-Portrait.png" />
     <BundleResource Include="Resources\Default-Portrait%402x.png" />
     <BundleResource Include="Resources\HomeworkNormal-yYd2.ttf" />
+    <BundleResource Include="Resources\hamburger.png"/>
+    <BundleResource Include="Resources\boopup.jpg"/>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

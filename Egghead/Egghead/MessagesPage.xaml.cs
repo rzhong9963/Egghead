@@ -24,7 +24,7 @@ namespace Egghead
                 },
                 new Message()
                 {
-                    Name = "Proffessor", Text = "Geaux Tigers!"
+                    Name = "Professor", Text = "Geaux Tigers!"
                 }
             };
 

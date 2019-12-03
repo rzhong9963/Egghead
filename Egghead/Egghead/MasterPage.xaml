@@ -7,17 +7,16 @@
              mc:Ignorable="d"
              x:Class="Egghead.MasterPage"
              Padding="0,40,0,0"
-             Title="EggHead" BackgroundColor="#B074DC">
+             Title="Egghead" BackgroundColor="#B074DC"
+             IconImageSource="hamburger.png">
     <StackLayout>
-       
         <Label Text="Menu"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="StartAndExpand"
                HorizontalTextAlignment="Start"
                InputTransparent="True"
                TextColor="White"
-               FontAttributes="Bold"
-               FontSize="40">
+               FontSize="50">
             <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS">homework normal</On>
@@ -30,9 +29,9 @@
                 <x:Array Type="{x:Type local:MasterPageItem}">
                     <local:MasterPageItem Title="Connections" IconSource="connections.png" TargetType="{x:Type local:ConnectionsPage}"/>
                     <local:MasterPageItem Title="Messages" IconSource="messages.png" TargetType="{x:Type local:MessagesPage}" />
-                    <local:MasterPageItem Title="Settings" IconSource="settings.png" TargetType="{x:Type local:SettingsPage}" />
                     <local:MasterPageItem Title="Search for Mentors" TargetType="{x:Type local:SearchPage}"/>
                     <local:MasterPageItem Title="My Matches" TargetType="{x:Type local:Matches}"/>
+                    <local:MasterPageItem Title="Settings" IconSource="settings.png" TargetType="{x:Type local:SettingsPage}" />
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
