@@ -10,8 +10,22 @@
              Title="EggHead" BackgroundColor="#B074DC">
     <StackLayout>
        
-        <Label Text="Menu" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="40" HorizontalTextAlignment="Start" InputTransparent="True" FontAttributes="Bold" FontFamily="HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2"/>
-        <ListView x:Name="listView" x:FieldModifier="public">
+        <Label Text="Menu"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand"
+               HorizontalTextAlignment="Start"
+               InputTransparent="True"
+               TextColor="White"
+               FontSize="50"
+               FontAttributes="Bold">
+            <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS">homework normal</On>
+                        <On Platform="Android">HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2</On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        <ListView x:Name="listView" x:FieldModifier="public" BackgroundColor="#C091E3" Footer="">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:MasterPageItem}">
                     <local:MasterPageItem Title="Connections" IconSource="connections.png" TargetType="{x:Type local:ConnectionsPage}"/>
