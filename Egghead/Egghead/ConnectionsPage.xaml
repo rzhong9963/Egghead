@@ -54,18 +54,20 @@
                          HorizontalOptions="Center"
                          AbsoluteLayout.LayoutBounds=".5,.95,700,200"
                          AbsoluteLayout.LayoutFlags="PositionProportional">
-                <Frame BackgroundColor="LimeGreen"
-                       WidthRequest="50"
-                       HeightRequest="50"
-                       BorderColor="LightGray"
+                <Frame WidthRequest="100"
+                       HeightRequest="100"
                        CornerRadius="50"
-                       Margin="0,0,50,0"/>
-                <Frame BackgroundColor="Red"
-                       WidthRequest="50"
-                       HeightRequest="50"
-                       BorderColor="LightGray"
+                       Margin="0,0,50,0"
+                       IsClippedToBounds="True">
+                    <Image Source="tup.jpg"/>
+                </Frame>
+                <Frame WidthRequest="100"
+                       HeightRequest="100"
                        CornerRadius="50"
-                       Margin="50,0,0,0"/>
+                       Margin="50,0,0,0"
+                       IsClippedToBounds="True">
+                    <Image Source="tdwn.jpg"/>
+                </Frame>
             </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
