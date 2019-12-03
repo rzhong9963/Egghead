@@ -18,5 +18,10 @@ namespace Egghead
             App.LoggedIn = null;
             await Navigation.PushAsync(new Login());
         }
+
+        async void ChangePass(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChangePassword());
+        }
     }
 }

@@ -21,6 +21,12 @@ namespace Egghead
             set;
         }
 
+        public static string UserEmail
+        {
+            get;
+            set;
+        }
+
         static UserDB db;
 
         public static UserDB Database

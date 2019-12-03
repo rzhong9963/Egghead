@@ -31,6 +31,7 @@ namespace Egghead
             {
                 App.IsLoggedIn = true;
                 App.LoggedIn = await App.Database.GetUserAsync(user.Email, user.Password);
+                App.UserEmail = user.Email;
                 Navigation.InsertPageBefore(new MainPage(), this); // Change MainPage to whatever the actual Main Page (Connections) is named
                 await Navigation.PopAsync();
             }

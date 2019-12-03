@@ -8,6 +8,7 @@
              Title="Settings">
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="Change Password" Clicked="ChangePass"/>
             <Button Text="Sign Out" Clicked="SignOut"/>
         </StackLayout>
     </ContentPage.Content>

@@ -18,8 +18,6 @@ namespace Egghead
         {
             var u = App.Database.GetUserAsync(Email.Text);
 
-            if (u.Result.Email == Email.Text)
-
             if(u.Result == null)
             {               
                 Err.IsVisible = true;
@@ -33,11 +31,6 @@ namespace Egghead
                 u.Result.Password = TempPass.temp;
                 await App.Database.SaveUserAsync(u.Result);
                 await Navigation.PushAsync(new PasswordPage());
-            }
-
-            else
-            {
-              // Msg.Text = "No account with the email exists";
             }
 
         }

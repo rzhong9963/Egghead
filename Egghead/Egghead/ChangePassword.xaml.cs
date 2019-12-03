@@ -16,22 +16,48 @@ namespace Egghead
 
         public async void ChangePass(object sender, EventArgs e)
         {
-            if (Valid())
+            var u = await App.Database.GetUserAsync(App.UserEmail);
+            if (u != null && u.Password == TempPass.temp)
             {
-                var u = await App.Database.GetUserAsync(TempPass.user);
-                if (u != null)
-                {
-                    u.Password = pass.Text;
+                u.Password = pass.Text;
+                if(Valid()) {
                     await App.Database.SaveUserAsync(u);
-                    App.IsLoggedIn = true;
-                    App.LoggedIn = u;
-                    Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
-                    await Navigation.PopToRootAsync(); // Change MainPage to whatever the actual Main Page (Connections) is named
+                    await DisplayAlert("Success", "Password Changed", "OK");
+                    Change(sender, e);
                 }
                 else
                 {
-                    ErrorMsg.Text = "An Unknown Error Occurred";
+                    await DisplayAlert("Error", "An Unknown Error Occured", "OK");
                 }
+            }
+            else if (u != null)
+            {
+                u.Password = pass.Text;
+                if (Valid())
+                {
+                    await App.Database.SaveUserAsync(u);
+                    await DisplayAlert("Success", "Password Changed", "OK");
+                    Change(sender, e);
+                }
+                else
+                {
+                    await DisplayAlert("Error", "An Unknown Error Occured", "OK");
+                }
+            }
+        }
+
+        async void Change(object sender, EventArgs e)
+        {
+            var u = await App.Database.GetUserAsync(App.UserEmail);
+            if(TempPass.temp != u.Password)
+            {
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                App.IsLoggedIn = true;
+                App.LoggedIn = u;
+                await Navigation.PopToRootAsync();
             }
         }
 
