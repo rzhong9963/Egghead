@@ -1,11 +1,10 @@
 ﻿
 
-using System.Windows.Input;
-using Xamarin.Forms;
+using System;
 
 namespace Egghead
 {
-    class Message
+    public class Message
     {
         public string Name { get; set; }
         public string Text { get; set; }

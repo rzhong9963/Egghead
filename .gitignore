@@ -341,3 +341,4 @@ healthchecksdb
 
 # CodeGraph Extension
 CodeGraphData
+.DS_STORE
