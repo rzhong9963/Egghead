@@ -6,9 +6,11 @@
              mc:Ignorable="d"
              x:Class="Egghead.IncomingViewCell">
     <Frame BackgroundColor="LightBlue"
-           Padding="10"
-           HasShadow="false"
-           Margin="10,10,80,10">
+              Rotation="180"
+              FlowDirection="LeftToRight"
+              Padding="10"
+              HasShadow="false"
+              Margin="10,10,80,10">
         <Label Text="{Binding Text}"/>
     </Frame>
 </ViewCell>
