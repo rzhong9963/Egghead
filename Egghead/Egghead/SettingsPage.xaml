@@ -8,9 +8,7 @@
              Title="Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Sign Out" Clicked="SignOut"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
