@@ -11,7 +11,7 @@ namespace Egghead
             Content = new StackLayout
             {
                 Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!",
+                    new Label { Text = "Under development!",
                     HorizontalOptions = LayoutOptions.Center,
                     VerticalOptions = LayoutOptions.CenterAndExpand
                     }
