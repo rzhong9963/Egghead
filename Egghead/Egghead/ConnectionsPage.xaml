@@ -20,7 +20,7 @@
                                  Orientation="Horizontal">
                         <Frame Margin="10"
                                BorderColor="Black"
-                               CornerRadius="50"
+                               CornerRadius="30"
                                HeightRequest="60"
                                WidthRequest="60"
                                HorizontalOptions="Center"
