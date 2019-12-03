@@ -14,17 +14,15 @@
                 <StackLayout BackgroundColor="MediumPurple"
                              HorizontalOptions="FillAndExpand" >
                     <Frame Margin="10"          
-                            CornerRadius="150"
+                            CornerRadius="70"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
                             HeightRequest="100"
                             WidthRequest="100"
-                            IsClippedToBounds="True"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center">
+                            IsClippedToBounds="True">
                         <Image Source="ditto.jpg"
                                 Aspect="AspectFill"
-                                Margin="-20"
-                                HeightRequest="200"
-                                WidthRequest="200" />
+                                Margin="-20"/>
                     </Frame>
                     <Frame BackgroundColor="Transparent"
                            CornerRadius="0"
