@@ -1,9 +1,9 @@
-﻿using Xamarin.Forms.Xaml;
-
+﻿using System;
+using System.Collections.Generic;
+using Xamarin.Forms;
 namespace Egghead
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class OutgoingViewCell
+    public partial class OutgoingViewCell :ViewCell
     {
         public OutgoingViewCell()
         {
