@@ -6,12 +6,12 @@ using Xamarin.Forms;
 namespace Egghead
 {
     class ChatActivity : INotifyPropertyChanged
-    {
+    {   
         public ObservableCollection<Message> Messages { get; set; } = new ObservableCollection<Message>();
         public string TextToSend { get; set; }
         public ICommand OnSendCommand { get; set; }
         public ChatActivity()
-        {
+        {  
             Messages.Add(new Message() { Text = "Hi" });
             Messages.Add(new Message() { Text = "How are you?" });
 
