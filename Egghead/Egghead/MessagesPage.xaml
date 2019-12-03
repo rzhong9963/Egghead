@@ -14,7 +14,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" BackgroundColor="White">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
@@ -25,15 +25,14 @@
                             </Grid.ColumnDefinitions>
                             <Label Grid.Column="1"
                                    Text="{Binding Name}"
-                                   VerticalOptions="End"/>
+                                   VerticalOptions="End"
+                                   TextColor="Purple"/>
                             <Label Grid.Column="1"
                                    Grid.Row="1"
                                    VerticalOptions="Start"
                                    Text="{Binding Text}"/>
                         </Grid>
-                    </ViewCell>
-                 
-
+                    </ViewCell>             
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
