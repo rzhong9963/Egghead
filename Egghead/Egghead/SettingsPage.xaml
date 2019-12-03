@@ -8,8 +8,8 @@
              Title="Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Change Password" Clicked="ChangePass"/>
-            <Button Text="Sign Out" Clicked="SignOut"/>
+            <Button Text="Change Password" Clicked="ChangePass" BackgroundColor="White" CornerRadius="20" TextColor="Purple"/>
+            <Button Text="Sign Out" Clicked="SignOut" BackgroundColor="White" CornerRadius="20" TextColor="Purple"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
