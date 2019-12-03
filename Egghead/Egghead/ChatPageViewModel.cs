@@ -36,14 +36,12 @@ namespace Egghead
             Messages.Insert(0, new Message() { Text = "Also I'm testing this chat" });
             Messages.Insert(0, new Message() { Text = "Oh My God!" });
             Messages.Insert(0, new Message() { Text = " No Problem", Name = App.Name });
-            Messages.Insert(0, new Message() { Text = "Hugs and Kisses", Name = App.Name });
             Messages.Insert(0, new Message() { Text = "When we are going to meet?" });
             Messages.Insert(0, new Message() { Text = "I want to buy a laptop" });
             Messages.Insert(0, new Message() { Text = "Where I can find a good one?" });
             Messages.Insert(0, new Message() { Text = "Also I'm testing this chat" });
             Messages.Insert(0, new Message() { Text = "Oh My God!" });
             Messages.Insert(0, new Message() { Text = " No Problem" });
-            Messages.Insert(0, new Message() { Text = "Hugs and Kisses" });
 
             MessageAppearingCommand = new Command<Message>(OnMessageAppearing);
             MessageDisappearingCommand = new Command<Message>(OnMessageDisappearing);
@@ -57,24 +55,6 @@ namespace Egghead
                 }
 
             });
-
-            //Code to simulate reveing a new message procces 
-            Device.StartTimer(TimeSpan.FromSeconds(5), () =>
-            {
-                if (LastMessageVisible)
-               {
-                    Messages.Insert(0, new Message() { Text = "Are you there?", Name = "Mario" });
-                }
-               else
-               {
-                    DelayedMessages.Enqueue(new Message() { Text = "Please answer", Name = "Mario" });
-                    PendingMessageCount++;
-               }
-              return true;
-            });
-            
-
-
         }
 
         void OnMessageAppearing(Message message)

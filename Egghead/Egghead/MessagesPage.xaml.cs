@@ -16,15 +16,23 @@ namespace Egghead
             {
                 new Message()
                 {
-                    Name = "Dr.Mitchell ", Text = "Good to know, see you then!", 
+                    Name = "Dr. Mitchell Hogan ", Text = "How are you holding up?", 
                 },
                 new Message()
                 {
-                    Name = "Andrew", Text = "Geaux Tigers!"
+                    Name = "Dr. Jonathan Miles", Text = "The meeting will be held, on Monday the 5th."
                 },
                 new Message()
                 {
-                    Name = "Professor", Text = "Geaux Tigers!"
+                    Name = "Andrew.", Text = "I've got a bunch of other things to do this week tho"
+                },
+                new Message()
+                {
+                    Name = "", Text = ""
+                },
+                new Message()
+                {
+                    Name = "Dr. Robert E. Speedwagon", Text = ""
                 }
             };
 
