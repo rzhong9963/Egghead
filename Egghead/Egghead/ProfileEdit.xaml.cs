@@ -10,15 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace Egghead
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProfilePage : ContentPage
+    public partial class ProfileEdit : ContentPage
     {
-        public ProfilePage()
+        public ProfileEdit()
         {
-            new Image { Source = "ditto.jpg" };
-            void Edit_Button_Clicked(object sender, EventArgs e)
-            {
-                Navigation.PushAsync(new ProfileEdit());
-            }
             InitializeComponent();
         }
     }

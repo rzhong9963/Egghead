@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Egghead.ProfileEdit">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="First Name" />
+            <Entry Placeholder="Last Name" />
+            <Picker Title="Select Field of Study">
+                <Picker.Items>
+                    <x:String>Civil Engineering</x:String>
+                    <x:String>Computer Engineering</x:String>
+                    <x:String>Computer Science</x:String>
+                    <x:String>Construction Management</x:String>
+                    <x:String>Chemical Engineering</x:String>
+                    <x:String>Electrical Engineering</x:String>
+                    <x:String>Mechanical Engineering</x:String>
+                </Picker.Items>
+            </Picker>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
