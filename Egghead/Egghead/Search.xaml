@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Egghead.SearchPage"
+             Title="Search">
+  <ContentPage.Content>
+      <AbsoluteLayout>
+            <Frame AbsoluteLayout.LayoutBounds=".5,.05,.75,.10"
+                   AbsoluteLayout.LayoutFlags="All"
+                   CornerRadius="50"
+                   Padding="10"
+                   IsClippedToBounds="True">
+                <Entry Placeholder="Search"
+                       TextColor="Black"/>
+            </Frame>
+      </AbsoluteLayout>
+  </ContentPage.Content>
+</ContentPage>
