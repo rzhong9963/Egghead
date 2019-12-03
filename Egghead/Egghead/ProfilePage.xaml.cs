@@ -15,11 +15,12 @@ namespace Egghead
         public ProfilePage()
         {
             new Image { Source = "ditto.jpg" };
-            void Edit_Button_Clicked(object sender, EventArgs e)
-            {
-                Navigation.PushAsync(new ProfileEdit());
-            }
             InitializeComponent();
+        }
+
+        async void Edit_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProfileEdit());
         }
     }
 }
