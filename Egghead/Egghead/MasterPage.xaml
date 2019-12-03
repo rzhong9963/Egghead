@@ -7,12 +7,15 @@
              mc:Ignorable="d"
              x:Class="Egghead.MasterPage"
              Padding="0,40,0,0"
-             Title="EggHead">
+             Title="EggHead" BackgroundColor="#B074DC">
     <StackLayout>
-        <ListView x:Name="listView" x:FieldModifier="public">
+        <Frame BackgroundColor="Transparent">
+            <Label Text="Menu" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="40" HorizontalTextAlignment="Start" InputTransparent="True" FontAttributes="Bold" FontFamily="HomeworkNormal-yYd2.ttf#HomeworkNormal-yYd2"/>
+        </Frame>
+        <ListView x:Name="listView" x:FieldModifier="public" >
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:MasterPageItem}">
-                    <local:MasterPageItem Title="Connections" IconSource="connections.png" TargetType="{x:Type local:ConnectionsPage}" />
+                    <local:MasterPageItem Title="Connections" IconSource="connections.png" TargetType="{x:Type local:ConnectionsPage}"/>
                     <local:MasterPageItem Title="Messages" IconSource="messages.png" TargetType="{x:Type local:MessagesPage}" />
                     <local:MasterPageItem Title="Settings" IconSource="settings.png" TargetType="{x:Type local:SettingsPage}" />
                 </x:Array>
@@ -20,15 +23,15 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="5,10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="30"/>
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Image Source="{Binding IconSource}" />
-                            <Label Grid.Column="1" Text="{Binding Title}" />
-                        </Grid>
-                    </ViewCell>
+                            <Grid Padding="5,10" BackgroundColor="#C091E3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding IconSource}" />
+                                <Label Grid.Column="1" Text="{Binding Title}" TextColor="White"/>
+                            </Grid>
+                        </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
