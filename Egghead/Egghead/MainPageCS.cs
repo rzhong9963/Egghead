@@ -10,6 +10,7 @@ namespace Egghead
 
         public MainPageCS()
         {
+            
             masterPage = new MasterPageCS();
             Master = masterPage;
             Detail = new NavigationPage(new ConnectionsPageCS());
