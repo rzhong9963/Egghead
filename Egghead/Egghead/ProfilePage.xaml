@@ -10,9 +10,10 @@
         <ScrollView>
             <StackLayout>
 
-                <!-- Profile Name -->
+                <!-- top purple background -->
                 <StackLayout BackgroundColor="MediumPurple"
                              HorizontalOptions="FillAndExpand" >
+                   <!-- profile picture -->
                     <Frame Margin="10"          
                             CornerRadius="70"
                             HorizontalOptions="Center"
@@ -24,6 +25,7 @@
                                 Aspect="AspectFill"
                                 Margin="-20"/>
                     </Frame>
+                    <!-- profile name and info -->
                     <Frame BackgroundColor="Transparent"
                            CornerRadius="0"
                            Padding="0,10,0,70"
@@ -53,6 +55,7 @@
                            TextColor="Black"
                            Text="Devoted reader. Entrepreneur. Typical pop culture fanatic. Bacon junkie. Tvaholic. Web guru." />
                 </StackLayout>
+                <!-- profile edit button -->
                 <Button Text="Edit" Clicked="Edit_Button_Clicked" BackgroundColor="White" CornerRadius="20" TextColor="Purple" HorizontalOptions="Center"/>
             </StackLayout>
         </ScrollView>

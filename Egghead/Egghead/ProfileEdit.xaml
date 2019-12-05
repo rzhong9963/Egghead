@@ -7,8 +7,10 @@
              x:Class="Egghead.ProfileEdit">
     <ContentPage.Content>
         <StackLayout>
+            <!-- create entry boxes for first and last name -->
             <Entry Placeholder="First Name" />
             <Entry Placeholder="Last Name" />
+            <!-- create picker for selecting major -->
             <Picker Title="Select Field of Study">
                 <Picker.Items>
                     <x:String>Civil Engineering</x:String>
