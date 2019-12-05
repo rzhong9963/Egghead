@@ -12,6 +12,7 @@ namespace Egghead
             InitializeComponent();
         }
 
+        // Sign out button
         async void SignOut(object sender, EventArgs e)
         {
             App.IsLoggedIn = false;
@@ -19,6 +20,7 @@ namespace Egghead
             await Navigation.PushAsync(new Login());
         }
 
+        // Change password button
         async void ChangePass(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ChangePassword());

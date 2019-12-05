@@ -15,21 +15,26 @@ namespace Egghead
             InitializeComponent();
         }
 
+        // SIgn up button
         async void SignUpButton(object sender, EventArgs e)
         {
             var u = new User();
             u.Email = email.Text;
             u.Password = pass.Text;
+            // Get current users in system
             var users = await App.Database.GetUsersAsync();
+            // If any field is empty
             if (email.Text == null|| pass.Text == null || passRep.Text == null)
             {
                 await DisplayAlert("Error", "Fields cannot be empty", "OK");
             }
+            // If all fields are filled and user is not already in system
             else if (ValidCredentials(u, users))
             {
                 var firstPage = Navigation.NavigationStack.FirstOrDefault();
                 if (firstPage != null)
                 {
+                    // Save the user into the local database
                     await App.Database.SaveUserAsync(u);
                     App.IsLoggedIn = true;
                     App.LoggedIn = u;
@@ -41,7 +46,7 @@ namespace Egghead
             }
         }
 
-       
+       // Checks to make sure all fields are valid and have the correct info
         bool ValidCredentials(User u, List<User> users)
         {
             bool valid = false;

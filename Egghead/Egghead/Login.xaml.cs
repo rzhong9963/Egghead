@@ -14,6 +14,7 @@ namespace Egghead
             InitializeComponent();
         }
 
+        // Login button on login screen
         async void LoginButton(object sender, EventArgs e)
         {
             var user = new User
@@ -22,11 +23,15 @@ namespace Egghead
                 Password = pass.Text
             };
 
+            // If the user got a temporary password, they are redirected to change it immediately
+            // For some reason the last I tested it, it goes back to login screen :/
             if (pass.Text == TempPass.temp)
             {
                 await Navigation.PushAsync(new ChangePassword());
             }
             var validUser = CheckCredentials(user);
+
+            // Check to see if user is in database and sets their login status to true
             if (validUser)
             {
                 App.IsLoggedIn = true;
@@ -43,16 +48,19 @@ namespace Egghead
             }
         }
 
+        // Go to forgot password page
         async void ForgotPass(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ResetPassword());
         }
 
+        // Go to sign up page
         async void SignUp(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SignUp());
         }
 
+        // Check to see if user is in database
         bool CheckCredentials(User u)
         {
             var loggedin = App.Database.GetUserAsync(email.Text, pass.Text).Result;

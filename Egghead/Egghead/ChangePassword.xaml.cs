@@ -14,9 +14,13 @@ namespace Egghead
             InitializeComponent();
         }
 
+        // Change Password Button
         public async void ChangePass(object sender, EventArgs e)
         {
+            // Get user info from login email
             var u = await App.Database.GetUserAsync(App.UserEmail);
+            
+            // Check to see if the temporary password from forgotten password is their current one
             if (u != null && u.Password == TempPass.temp)
             {
                 u.Password = pass.Text;
@@ -46,6 +50,7 @@ namespace Egghead
             }
         }
 
+        // Change the user's password
         async void Change(object sender, EventArgs e)
         {
             var u = await App.Database.GetUserAsync(App.UserEmail);
@@ -61,6 +66,7 @@ namespace Egghead
             }
         }
 
+        // Determines if the passwords meet the minimum requirements
         public bool Valid()
         {
             bool v = false;

@@ -14,6 +14,7 @@ namespace Egghead
             InitializeComponent();
         }
 
+        // Reset password button after a valid email is given redirecting user to their temporary password
         async void ResPas(object sender, EventArgs e)
         {
             var u = App.Database.GetUserAsync(Email.Text);
@@ -23,7 +24,6 @@ namespace Egghead
                 Err.IsVisible = true;
             }
             else
-
             {
                 Err.IsVisible = false;
                 TempPass.temp = temp();
