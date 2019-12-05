@@ -5,8 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Egghead.ChatInputBarView">
+    <!--chat bar-->
     <Grid RowSpacing="0" 
            ColumnSpacing="0">
+        <!--set row defs-->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
@@ -14,6 +16,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
+        <!--text entry box-->
         <Entry x:Name="chatTextInput" 
                  Text="{Binding TextToSend}" 
                  Margin="1"  
@@ -25,11 +28,13 @@
                  Grid.Row="0" 
                  Grid.Column="0"
                  Completed="Handle_Completed"/>
+        <!--send button-->
         <Label Text="Send"
                Grid.Row="0"
                Grid.Column="1"
                VerticalTextAlignment="Center"
                TextColor="Purple">
+            <!--gesture recognizer for send button-->
             <Label.GestureRecognizers>
                 <TapGestureRecognizer
                       Command="{Binding OnSendCommand}"

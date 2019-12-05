@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="Egghead.MessagesPage"
              Title="Messages">
+    <!--viewing messages-->
     <ContentPage.Content>
         <ListView x:Name="lst" BackgroundColor="#f2e6ff"
                   HasUnevenRows="true"
@@ -14,6 +15,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
+                        <!--set grid definitions-->
                         <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" BackgroundColor="White">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -23,6 +25,7 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
+                            <!--add labels for names and message-->
                             <Label Grid.Column="1"
                                    Text="{Binding Name}"
                                    VerticalOptions="End"

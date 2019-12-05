@@ -5,12 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Egghead.IncomingViewCell">
+    <!--Incoming chat cell-->
     <Frame BackgroundColor="#DABAF2"
               Rotation="180"
               FlowDirection="LeftToRight"
               Padding="10"
               HasShadow="false"
               Margin="10,10,80,10">
+        <!--add text-->
         <Label Text="{Binding Text}"/>
     </Frame>
 </ViewCell>

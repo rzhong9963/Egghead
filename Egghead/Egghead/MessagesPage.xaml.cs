@@ -12,8 +12,9 @@ namespace Egghead
         public MessagesPage()
         {
             InitializeComponent();
+            //add new messages to list view
             lst.ItemsSource = new List<Message>()
-            {
+            {   
                 new Message()
                 {
                     Name = "Michael Stevens", Text = "No Problem",

@@ -5,12 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Egghead.OutgoingViewCell">
+    <!--outgoing view cell-->
     <Frame BackgroundColor="Gray"
             Padding="10"
             Rotation="180"
             FlowDirection="LeftToRight"
             HasShadow="false"
             Margin="80,10,10,10">
+        <!--add text-->
         <Label Text="{Binding Text}"
                   TextColor="White"/>
     </Frame>
