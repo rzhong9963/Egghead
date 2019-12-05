@@ -8,15 +8,6 @@ namespace Egghead
         public MessagesPageCS()
         {
             Title = "Messages Page";
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!",
-                    HorizontalOptions = LayoutOptions.Center,
-                    VerticalOptions = LayoutOptions.CenterAndExpand
-                    }
-                }
-            };
         }
     }
 }
